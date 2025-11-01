@@ -34,7 +34,6 @@ export default function Changelog() {
         "Support for new countries",
         "Redesigned user interface",
         "Added multi-language support",
-        "New customer support chat",
       ],
     },
   ];

@@ -40,23 +40,23 @@ export default function Index() {
           <HeroSection />
         </section>
 
-        <section id="how-it-works">
+        <section id="how-it-works" className="scroll-mt-20 md:scroll-mt-24">
           <HowItWorks />
         </section>
 
-        <section id="data-plans">
+        <section id="data-plans" className="scroll-mt-20 md:scroll-mt-24">
           <DataPlans />
         </section>
 
-        <section id="referrals">
+        <section id="referrals" className="scroll-mt-20 md:scroll-mt-24">
           <ReferralProgram />
         </section>
 
-        <section id="faq">
+        <section id="faq" className="scroll-mt-20 md:scroll-mt-24">
           <FAQ />
         </section>
 
-        <section id="contact">
+        <section id="contact" className="scroll-mt-20 md:scroll-mt-24">
           <Contact />
         </section>
       </main>

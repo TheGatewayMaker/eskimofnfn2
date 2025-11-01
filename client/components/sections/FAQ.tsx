@@ -99,8 +99,8 @@ export const FAQ = () => {
             Still have questions?
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Our support team is here to help. Get in touch with us via email,
-            live chat, or visit our help center for more information.
+            Our support team is here to help. Get in touch with us via email or
+            visit our help center for more information.
           </p>
           <button className="btn-primary">Contact Support</button>
         </div>

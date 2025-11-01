@@ -56,13 +56,6 @@ export const Contact = () => {
                 "Send us an email and we'll respond within 24 hours.",
             },
             {
-              icon: MessageSquare,
-              title: "Live Chat",
-              detail: "Available 24/7",
-              description:
-                "Chat with our support team in real-time on our website.",
-            },
-            {
               icon: User,
               title: "Community",
               detail: "Join us on Discord",
