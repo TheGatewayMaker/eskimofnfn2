@@ -1,0 +1,171 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme for Eskimo
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+  */
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 215 32% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 32% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 32% 8%;
+
+    --primary: 215 85% 35%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 13% 34%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 215 32% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 40% 92%;
+    --input: 210 40% 96%;
+    --ring: 215 85% 35%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 215 85% 35%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 215 85% 35%;
+    --sidebar-accent: 187 100% 50%;
+    --sidebar-accent-foreground: 215 32% 8%;
+    --sidebar-border: 215 85% 35%;
+    --sidebar-ring: 187 100% 50%;
+  }
+
+  .dark {
+    --background: 215 32% 12%;
+    --foreground: 210 40% 98%;
+    --card: 215 32% 18%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 32% 18%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 215 32% 8%;
+    --secondary: 220 60% 65%;
+    --secondary-foreground: 215 32% 8%;
+    --muted: 215 32% 35%;
+    --muted-foreground: 210 40% 80%;
+    --accent: 187 100% 50%;
+    --accent-foreground: 215 32% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 32% 28%;
+    --input: 215 32% 28%;
+    --ring: 187 100% 50%;
+    --sidebar-background: 215 32% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 215 32% 8%;
+    --sidebar-accent: 220 60% 65%;
+    --sidebar-accent-foreground: 215 32% 8%;
+    --sidebar-border: 215 32% 28%;
+    --sidebar-ring: 187 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .slide-in-up {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Scroll fade-in animation for elements */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
