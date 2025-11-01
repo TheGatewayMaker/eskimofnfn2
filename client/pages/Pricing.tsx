@@ -121,10 +121,10 @@ export default function Pricing() {
                 Every referral earns you 500MB of free data. With no limit on
                 referrals, you can stay connected indefinitely.
               </p>
-              <button className="btn-primary inline-flex items-center gap-2">
+              <a href="/#referrals" className="btn-primary inline-flex items-center gap-2">
                 Learn About Referrals
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </div>
         </section>
