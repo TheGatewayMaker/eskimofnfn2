@@ -49,13 +49,13 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-primary inline-flex items-center gap-2 group">
+            <a href="/#data-plans" className="btn-primary inline-flex items-center gap-2 group">
               Get Started
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+            </a>
+            <a href="/#how-it-works" className="border-2 border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
               Learn More
-            </button>
+            </a>
           </div>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
