@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { DataPlans } from "@/components/sections/DataPlans";
+import { VideoBackground } from "@/components/sections/VideoBackground";
 import { ReferralProgram } from "@/components/sections/ReferralProgram";
 import { DownloadApp } from "@/components/sections/DownloadApp";
 import { FAQ } from "@/components/sections/FAQ";
