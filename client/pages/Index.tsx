@@ -50,6 +50,10 @@ export default function Index() {
           <DataPlans />
         </section>
 
+        <section id="video" className="scroll-mt-20 md:scroll-mt-24">
+          <VideoBackground />
+        </section>
+
         <section id="referrals" className="scroll-mt-20 md:scroll-mt-24">
           <ReferralProgram />
         </section>
