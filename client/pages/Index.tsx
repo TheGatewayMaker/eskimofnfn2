@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { DataPlans } from "@/components/sections/DataPlans";
 import { ReferralProgram } from "@/components/sections/ReferralProgram";
+import { MoreReasons } from "@/components/sections/MoreReasons";
 import { DownloadApp } from "@/components/sections/DownloadApp";
 import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
