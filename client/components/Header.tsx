@@ -39,7 +39,7 @@ export const Header = () => {
             <a
               key={i}
               href={link.href}
-              className="px-4 py-2 text-gray-700 hover:text-primary font-medium transition-colors"
+              className="px-4 py-2 text-gray-700 hover:text-primary hover:underline underline-offset-4 decoration-2 decoration-blue-500/50 font-medium transition-colors"
             >
               {link.label}
             </a>
