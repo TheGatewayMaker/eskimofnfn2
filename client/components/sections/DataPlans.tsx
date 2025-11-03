@@ -66,7 +66,7 @@ export const DataPlans = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`group scroll-fade-in relative rounded-2xl overflow-hidden transition-all duration-300 ${
+              className={`group scroll-fade-in relative rounded-2xl overflow-hidden transition-all duration-300 transform motion-safe:hover:-translate-y-1 ${
                 plan.highlighted
                   ? "lg:scale-105 shadow-2xl ring-2 ring-primary"
                   : "border border-gray-200 hover:shadow-xl"
