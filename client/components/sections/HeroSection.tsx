@@ -1,10 +1,36 @@
 import { ArrowRight, Zap } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleCanPlay = () => {
+      console.log("✓ Video loaded successfully");
+    };
+
+    const handleError = (e: Event) => {
+      const target = e.target as HTMLVideoElement;
+      console.error("✗ Video failed to load:", target.error?.message);
+    };
+
+    video.addEventListener("canplay", handleCanPlay);
+    video.addEventListener("error", handleError);
+
+    return () => {
+      video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("error", handleError);
+    };
+  }, []);
+
   return (
     <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
       <div className="absolute inset-0 w-full h-full">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
@@ -17,16 +43,16 @@ export const HeroSection = () => {
           }}
         >
           <source
-            src="https://cdn.pixabay.com/vimeo/919926267/video-919926267.mp4"
+            src="https://www.eskimo.travel/videos/5-manifest.mp4"
             type="video/mp4"
           />
           <source
-            src="https://www.eskimo.travel/videos/5-manifest.mp4"
+            src="https://cdn.pixabay.com/vimeo/919926267/video-919926267.mp4"
             type="video/mp4"
           />
         </video>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{
