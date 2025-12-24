@@ -4,7 +4,7 @@ export const ReferralProgram = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-white via-blue-50 to-white">
       <div className="container-max">
-        <div className="scroll-fade-in max-w-4xl">
+        <div className="scroll-fade-in max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">
             Earn Unlimited{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
@@ -12,7 +12,7 @@ export const ReferralProgram = () => {
             </span>
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-medium">
+          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed font-semibold">
             Share Eskimo with your friends and family. Every successful referral
             gives you 500MB of free data, with absolutely no limit. Keep earning
             data forever.
@@ -56,11 +56,11 @@ export const ReferralProgram = () => {
                       <Icon className="w-7 h-7" />
                     </div>
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-base leading-relaxed">
+                    <p className="text-gray-600 text-base leading-relaxed font-medium">
                       {item.description}
                     </p>
                   </div>
@@ -69,12 +69,14 @@ export const ReferralProgram = () => {
             })}
           </div>
 
-          <a
-            href="/#download"
-            className="btn-primary inline-flex items-center gap-2 font-bold text-lg"
-          >
-            Download App to Get Started
-          </a>
+          <div className="flex justify-center">
+            <a
+              href="/#download"
+              className="btn-primary inline-flex items-center gap-2 font-bold text-lg"
+            >
+              Download App to Get Started
+            </a>
+          </div>
         </div>
 
         {/* Benefits comparison */}
