@@ -35,7 +35,6 @@ export const HeroSection = () => {
           muted
           loop
           playsInline
-          crossOrigin="anonymous"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             WebkitUserSelect: "none",
@@ -43,11 +42,7 @@ export const HeroSection = () => {
           }}
         >
           <source
-            src="https://www.eskimo.travel/videos/5-manifest.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://cdn.pixabay.com/vimeo/919926267/video-919926267.mp4"
+            src="/videos/eskimocreatorvideo.mp4"
             type="video/mp4"
           />
         </video>
