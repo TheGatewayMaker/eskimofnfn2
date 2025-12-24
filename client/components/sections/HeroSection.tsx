@@ -17,7 +17,11 @@ export const HeroSection = () => {
           }}
         >
           <source
-            src="https://videos.pexels.com/video-files/3191603/3191603-sd_640_360_30fps.mp4"
+            src="https://cdn.pixabay.com/vimeo/919926267/video-919926267.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://www.eskimo.travel/videos/5-manifest.mp4"
             type="video/mp4"
           />
         </video>
