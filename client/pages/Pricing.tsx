@@ -136,8 +136,8 @@ export default function Pricing() {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center min-h-80 md:min-h-96">
-                  <div className="w-full max-w-xs md:max-w-sm aspect-square flex items-center justify-center">
+                <div className="flex items-center justify-center min-h-96 md:min-h-screen">
+                  <div className="w-full max-w-sm md:max-w-lg aspect-square flex items-center justify-center">
                     <video
                       autoPlay
                       loop
@@ -151,7 +151,7 @@ export default function Pricing() {
                       }}
                     >
                       <source
-                        src="https://cdn.builder.io/o/assets%2F295a429d85044c78a21132b7d7f08c9b%2Fc7e24e1540e4417abfeec04798a779fb?alt=media&token=1232db6e-fabb-4441-a344-245bf05eccb6&apiKey=295a429d85044c78a21132b7d7f08c9b"
+                        src="/videos/ai-sphere.webm"
                         type="video/webm"
                       />
                       <p>Your browser doesn't support HTML5 video.</p>
