@@ -86,7 +86,9 @@ export const MoreReasons = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
                   {reason.title}
                 </h3>
-                <p className="text-base text-gray-600 font-medium leading-relaxed">{reason.description}</p>
+                <p className="text-base text-gray-600 font-medium leading-relaxed">
+                  {reason.description}
+                </p>
               </div>
             );
           })}

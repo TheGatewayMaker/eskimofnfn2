@@ -92,7 +92,9 @@ export const HeroSection = () => {
                 <div className="text-3xl md:text-4xl font-black text-cyan-300">
                   {stat.label}
                 </div>
-                <div className="text-xs sm:text-sm text-gray-200 mt-2">{stat.detail}</div>
+                <div className="text-xs sm:text-sm text-gray-200 mt-2">
+                  {stat.detail}
+                </div>
               </div>
             ))}
           </div>

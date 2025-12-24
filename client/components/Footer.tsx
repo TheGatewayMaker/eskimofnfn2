@@ -43,7 +43,9 @@ export const Footer = () => {
       <div className="border-b border-blue-700 py-12">
         <div className="container-max">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-3xl md:text-4xl font-black mb-4">Stay Updated</h3>
+            <h3 className="text-3xl md:text-4xl font-black mb-4">
+              Stay Updated
+            </h3>
             <p className="text-blue-200 mb-8 font-medium text-lg">
               Get the latest news about Eskimo, new features, and special offers
               straight to your inbox.
@@ -127,13 +129,22 @@ export const Footer = () => {
               <p>&copy; {currentYear} Eskimo Global. All rights reserved.</p>
             </div>
             <div className="flex gap-6 text-base text-blue-300 font-medium">
-              <a href="/legal" className="hover:text-white hover:translate-x-1 transition-all duration-300">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Privacy Policy
               </a>
-              <a href="/legal" className="hover:text-white hover:translate-x-1 transition-all duration-300">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Terms of Service
               </a>
-              <a href="/legal" className="hover:text-white hover:translate-x-1 transition-all duration-300">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Cookie Policy
               </a>
             </div>

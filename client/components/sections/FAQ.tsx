@@ -87,7 +87,9 @@ export const FAQ = () => {
 
               {openIndex === index && (
                 <div className="px-8 py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
-                  <p className="text-gray-600 leading-relaxed text-lg font-medium">{faq.answer}</p>
+                  <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>
@@ -102,7 +104,10 @@ export const FAQ = () => {
             Our support team is here to help. Get in touch with us via email or
             visit our help center for more information.
           </p>
-          <a href="/#contact" className="btn-primary inline-block font-bold text-lg">
+          <a
+            href="/#contact"
+            className="btn-primary inline-block font-bold text-lg"
+          >
             Contact Support
           </a>
         </div>

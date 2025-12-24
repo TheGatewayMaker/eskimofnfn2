@@ -47,7 +47,9 @@ export const Contact = () => {
                 <div className="font-bold text-primary mb-3 text-lg">
                   {item.detail}
                 </div>
-                <p className="text-base text-gray-600 font-medium">{item.description}</p>
+                <p className="text-base text-gray-600 font-medium">
+                  {item.description}
+                </p>
               </div>
             );
           })}

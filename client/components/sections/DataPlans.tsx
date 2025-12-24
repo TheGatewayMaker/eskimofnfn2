@@ -83,7 +83,9 @@ export const DataPlans = () => {
                 className={`p-8 md:p-12 h-full flex flex-col ${plan.highlighted ? "text-white" : "text-gray-900"}`}
               >
                 <div className="mb-8">
-                  <h3 className="text-3xl md:text-4xl font-black mb-3">{plan.name}</h3>
+                  <h3 className="text-3xl md:text-4xl font-black mb-3">
+                    {plan.name}
+                  </h3>
                   <p
                     className={`text-base ${plan.highlighted ? "text-blue-100" : "text-gray-600"}`}
                   >
@@ -102,7 +104,9 @@ export const DataPlans = () => {
                       of data
                     </span>
                   </div>
-                  <div className="text-3xl md:text-4xl font-black">{plan.price}</div>
+                  <div className="text-3xl md:text-4xl font-black">
+                    {plan.price}
+                  </div>
                 </div>
 
                 <ul className="space-y-5 mb-10 flex-grow">
@@ -111,7 +115,9 @@ export const DataPlans = () => {
                       <Check
                         className={`w-6 h-6 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform ${plan.highlighted ? "text-cyan-300" : "text-primary"}`}
                       />
-                      <span className="text-base font-medium leading-relaxed group-hover:text-opacity-95">{feature}</span>
+                      <span className="text-base font-medium leading-relaxed group-hover:text-opacity-95">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
