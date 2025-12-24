@@ -2,7 +2,7 @@ import { ArrowRight, Zap } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden min-h-[60vh] md:min-h-[75vh] flex items-center justify-center pt-20 md:pt-0">
+    <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
@@ -45,36 +45,36 @@ export const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
             Your One eSIM for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
               Everywhere
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
             Instant global connectivity without ID verification. Get 4G/5G data
             in 200+ countries, earn unlimited free data through referrals, and
             stay connected forever.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 sm:px-0">
             <a
               href="/#data-plans"
-              className="btn-primary inline-flex items-center gap-2 group"
+              className="btn-primary inline-flex items-center gap-2 group w-full sm:w-auto justify-center"
             >
               Get Started
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="/#how-it-works"
-              className="border-2 border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
+              className="border-2 border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 w-full sm:w-auto hover:shadow-lg"
             >
               Learn More
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-4 sm:px-0">
             {[
               { label: "200+", detail: "Countries" },
               { label: "4G/5G", detail: "Networks" },
@@ -86,10 +86,10 @@ export const HeroSection = () => {
                 className="animate-fadeIn"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <div className="text-2xl md:text-3xl font-bold text-cyan-300">
+                <div className="text-3xl md:text-4xl font-black text-cyan-300">
                   {stat.label}
                 </div>
-                <div className="text-sm text-gray-200 mt-1">{stat.detail}</div>
+                <div className="text-xs sm:text-sm text-gray-200 mt-2">{stat.detail}</div>
               </div>
             ))}
           </div>
