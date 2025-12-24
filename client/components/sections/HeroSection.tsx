@@ -3,7 +3,6 @@ import { ArrowRight, Zap } from "lucide-react";
 export const HeroSection = () => {
   return (
     <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0">
-      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
           autoPlay
@@ -22,7 +21,6 @@ export const HeroSection = () => {
           />
         </video>
 
-        {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
         <div
           className="absolute inset-0 opacity-[0.08]"
