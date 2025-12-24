@@ -136,16 +136,27 @@ export default function Pricing() {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center h-full min-h-96">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    src="https://cdn.builder.io/o/assets%2F295a429d85044c78a21132b7d7f08c9b%2Fc7e24e1540e4417abfeec04798a779fb?alt=media&token=1232db6e-fabb-4441-a344-245bf05eccb6&apiKey=295a429d85044c78a21132b7d7f08c9b"
-                    className="w-full h-full object-contain max-w-xs md:max-w-sm"
-                    style={{ aspectRatio: '1 / 1' }}
-                  />
+                <div className="flex items-center justify-center min-h-80 md:min-h-96">
+                  <div className="w-full max-w-xs md:max-w-sm aspect-square flex items-center justify-center">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      controls={false}
+                      className="w-full h-full object-contain"
+                      style={{
+                        WebkitUserSelect: "none",
+                        userSelect: "none",
+                      }}
+                    >
+                      <source
+                        src="https://cdn.builder.io/o/assets%2F295a429d85044c78a21132b7d7f08c9b%2Fc7e24e1540e4417abfeec04798a779fb?alt=media&token=1232db6e-fabb-4441-a344-245bf05eccb6&apiKey=295a429d85044c78a21132b7d7f08c9b"
+                        type="video/webm"
+                      />
+                      <p>Your browser doesn't support HTML5 video.</p>
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
